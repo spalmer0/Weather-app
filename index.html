@@ -4,19 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/config.js"></script>
     <script defer src="./js/script.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <title>Weather App</title>
 </head>
 <body>
     <main>
         <h1>Weather App</h1>
-        <p id="title"></p>
-        <p id="temp"></p>
-        <p id="index"></p>
-        <p id="desc"></p>
+        <h2 id="title"></h2>
+        <h2 id="forecast"></h2>
+        <table>
+            <tr>
+                <th id="day1">Day 1</th>
+                <th id="day2">Day 2</th>
+                <th id="day3">Day 3</th>
+                <th id="day4">Day 4</th>
+                <th id="day5">Day 5</th>
+            </tr>
+            <tr>
+                <td id="day1Temp">Day 1 Temp</td>
+                <td id="day2Temp">Day 2 Temp</td>
+                <td id="day3Temp">Day 3 Temp</td>
+                <td id="day4Temp">Day 4 Temp</td>
+                <td id="day5Temp">Day 5 Temp</td>
+            </tr>
+            <p id="temp"></p>
+            <p id="index"></p>
+            <p id="desc"></p>
+
+        </table>
     </main>
     <form>
         <input type="text" placeholder="Search by City">
+        <select name="days" id="days">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
         <input type="submit" value="Search">
     </form>
 </body>
